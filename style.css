@@ -1,0 +1,21 @@
+.calculator{ background:black;
+    padding-left: 10px;
+    border: solid black 1px;
+    margin: auto;
+    padding-right: 10px;}
+.displaybox{background:lightgray; width: 207px;
+    margin: auto;
+    padding: 23px;
+    width: 227px
+;border-radius: 20px;
+} 
+#btn{    width: 84px;
+    margin: auto;
+    padding: 22px;
+    height: 60px;border-radius: 20px;background: red}
+.btn{    width: 89px;
+    margin: auto;
+    height: 51px;
+    border: radius;
+    border-radius: 10px;
+background:cyan}
