@@ -1,21 +1,87 @@
-.calculator{ background:black;
-    padding-left: 10px;
-    border: solid black 1px;
-    margin: auto;
-    padding-right: 10px;}
-.displaybox{background:lightgray; width: 207px;
-    margin: auto;
-    padding: 23px;
-    width: 227px
-;border-radius: 20px;
-} 
-#btn{    width: 84px;
-    margin: auto;
-    padding: 22px;
-    height: 60px;border-radius: 20px;background: red}
-.btn{    width: 89px;
-    margin: auto;
-    height: 51px;
-    border: radius;
-    border-radius: 10px;
-background:cyan}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  color: rgb(175, 160, 160);
+  font-family: cursive;
+}
+#showBefore{
+  /* font-size: 16px;
+  color: #000;opacity: 0; */
+height: 25px
+}
+.calculator {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #3e426a; */
+  background: radial-gradient(circle, rgba(59,139,88,1) 0%, rgba(204,255,232,1) 17%, rgba(23,144,93,1) 48%, rgba(116,193,109,1) 67%, rgba(31,66,28,1) 79%, rgba(28,28,28,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b8b58",endColorstr="#1c1c1c",GradientType=1);
+}
+.calcuBox {
+  width: 350px;
+  height: 600px;
+  border: 3px solid #3e426a;
+  border-radius: 30px;
+  background: #000;
+  box-shadow: 0px 45px 65px 0px rgb(0 145 188 / 81%), 0px 35px 22px 0px rgb(0 0 0 / 16%);
+}
+.forpadding {
+  padding: 20px 0px;
+}
+.display {
+  padding: 100px 20px 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  color: #cfefff
+}
+.display2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  margin: 0px;
+  font-size: 35px;
+  color:#d6d6d6
+}
+.btn-row-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7px;
+}
+.btn-1 {
+  width: 65px;
+  height: 65px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-last {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7px;
+}
+
+.zero {
+  width: 120px;
+  height: 65px;
+  background: red;
+  border-radius: 50px;
+  padding: 0px 15px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.opt{
+  background-color:#ffa00b;color: #fdf2cf
+}
+.num{
+  background-color: #343434;color: #b0b0b0
+}
+.CDM{
+  background-color: #a3a3a3;color: #020202
+}
