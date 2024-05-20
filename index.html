@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="calculator">
-      <div class="calcuBox">
-        <div class="forpadding">
-            <div id="display" class="display">
-           <h3 id="showBefore"></h3>
-          </div>
-          <div id="display2" class="display2">0</div>
-          <div class="btn-row-1">
-            <div onclick="clear_display()" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="clear" class="btn-1 CDM"><h3>C</h3></div>
-            <div onclick="delete_last_char()" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="del" class="btn-1 CDM"><h3>DEL</h3></div>
-            <div onclick="print_per()" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="percent" class="btn-1 CDM"><h3>%</h3></div>
-            <div onclick="print_divide()" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)"  id="divide" class="btn-1 opt"><h3>/</h3></div>
-          </div>
-          <div class="btn-row-1">
-            <div onclick="print_seven()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="seven" class="btn-1 num"><h3>7</h3></div>
-            <div onclick="print_eight()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="eight" class="btn-1 num"><h3>8</h3></div>
-            <div onclick="print_nine()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="nine" class="btn-1 num"><h3>9</h3></div>
-            <div onclick="print_multi()" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)"  id="multiply" class="btn-1 opt"><h3>*</h3></div>
-          </div>
-          <div class="btn-row-1">
-            <div onclick="print_four()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="four" class="btn-1 num"><h3>4</h3></div>
-            <div onclick="print_five()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="five" class="btn-1 num"><h3>5</h3></div>
-            <div  onclick="print_six() "onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"id="six" class="btn-1 num"><h3>6</h3></div>
-            <div  onclick="print_minus() "onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)"id="subtract" class="btn-1 opt"><h3>-</h3></div>
-          </div>
-          <div class="btn-row-1">
-            <div onclick="print_one()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="one" class="btn-1 num"><h3>1</h3></div>
-            <div onclick="print_two()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="two"class="btn-1 num"><h3>2</h3></div>
-            <div onclick="print_three()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="three" class="btn-1 num"><h3>3</h3></div>
-            <div onclick="print_plus()" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)"  id="addition" class="btn-1 opt"><h3>+</h3></div>
-          </div>
-          <div class="btn-last">
-            <div onclick="print_zero()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="zero" class="zero num"><h3>0</h3></div>
-            <div onclick="print_dot()" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)"  id="dot" class="btn-1 num"><h3>.</h3></div>
-            <div onclick="perform_opt()" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)"  id="answer" class="btn-1 opt"><h3>=</h3></div>
-          </div>
+        <div class="calcuBox">
+            <div class="forpadding">
+                <div id="display" class="display">
+                    <h3 id="showBefore"></h3>
+                </div>
+                <div id="display2" class="display2">0</div>
+                <div class="btn-row-1">
+                    <div onclick="clear_display()" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="clear" class="btn-1 CDM">
+                        <h3>C</h3>
+                    </div>
+                    <div onclick="delete_last_char()" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="del" class="btn-1 CDM">
+                        <h3>DEL</h3>
+                    </div>
+                    <div onclick="print('%')" onmouseup="changeColorCMD(this)" onmousedown="defaultColorForCMD(this)" id="percent" class="btn-1 CDM">
+                        <h3>%</h3>
+                    </div>
+                    <div onclick="print('/')" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)" id="divide" class="btn-1 opt">
+                        <h3>/</h3>
+                    </div>
+                </div>
+                <div class="btn-row-1">
+                    <div onclick="print('7')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="seven" class="btn-1 num">
+                        <h3>7</h3>
+                    </div>
+                    <div onclick="print('8')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="eight" class="btn-1 num">
+                        <h3>8</h3>
+                    </div>
+                    <div onclick="print('9')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="nine" class="btn-1 num">
+                        <h3>9</h3>
+                    </div>
+                    <div onclick="print('*')" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)" id="multiply" class="btn-1 opt">
+                        <h3>*</h3>
+                    </div>
+                </div>
+                <div class="btn-row-1">
+                    <div onclick="print('4')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="four" class="btn-1 num">
+                        <h3>4</h3>
+                    </div>
+                    <div onclick="print('5')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="five" class="btn-1 num">
+                        <h3>5</h3>
+                    </div>
+                    <div onclick="print('6') " onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="six" class="btn-1 num">
+                        <h3>6</h3>
+                    </div>
+                    <div onclick="print('-') " onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)" id="subtract" class="btn-1 opt">
+                        <h3>-</h3>
+                    </div>
+                </div>
+                <div class="btn-row-1">
+                    <div onclick="print('1')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="one" class="btn-1 num">
+                        <h3>1</h3>
+                    </div>
+                    <div onclick="print('2')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="two" class="btn-1 num">
+                        <h3>2</h3>
+                    </div>
+                    <div onclick="print('3')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="three" class="btn-1 num">
+                        <h3>3</h3>
+                    </div>
+                    <div onclick="print('+')" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)" id="addition" class="btn-1 opt">
+                        <h3>+</h3>
+                    </div>
+                </div>
+                <div class="btn-last">
+                    <div onclick="print('0')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="zero" class="zero num">
+                        <h3>0</h3>
+                    </div>
+                    <div onclick="print('.')" onmouseup="changeColorNum(this)" onmousedown="defaultColorForNum(this)" id="dot" class="btn-1 num">
+                        <h3>.</h3>
+                    </div>
+                    <div onclick="perform_opt()" onmouseup="changeColorOpt(this)" onmousedown="defaultColorForOpt(this)" id="answer" class="btn-1 opt">
+                        <h3>=</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <script src="./app.js"></script>
-  </body>
+</body>
+
 </html>
